@@ -15,7 +15,7 @@ on:
   - cron: "0 0 * * 6"
 
 env:
-  REGISTRY_IMAGE: ghcr.io/${{ github.repository }}
+  REGISTRY_IMAGE: ghcr.io/justsem/gateway-admission-controller
 
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
         TAGS="${TAGS},${REGISTRY_IMAGE}:${VERSION%%.*}"
         if [[ $VERSION =~ ^v[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
           # :v1.0.0,:v1,:latest
-          TAGS="${TAGS},${REGISTRY_IMAGE}:latest"
+          TAGS="${TAGS},justsem/gateway-admission-controller:latest"
         fi
         echo ::set-output name=tags::${TAGS}
 
