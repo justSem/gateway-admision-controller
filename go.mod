@@ -1,4 +1,4 @@
-module github.com/justSem/gateway-admision-controller
+module github.com/k8s-at-home/gateway-admision-controller
 
 go 1.19
 
