@@ -155,6 +155,10 @@ func (cfg gatewayPodMutatorCfg) GatewayPodMutator(_ context.Context, adReview *k
 							cfg.logger.Warningf("Empty namespace - not changing search domainss")
 						}
 						copied.Searches[i] = strings.Join(searchParts, ".")
+						// Temporary debug logging for K8S DNS Searches issues.
+						for i := range copied.Searches {
+							cfg.logger.Infof(copied.Searches[i])
+						}
 					}
 				}
 

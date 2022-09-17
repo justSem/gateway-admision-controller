@@ -1,4 +1,4 @@
-module github.com/k8s-at-home/gateway-admision-controller
+module github.com/justSem/gateway-admision-controller
 
 go 1.19
 
@@ -8,8 +8,8 @@ require (
 	github.com/slok/kubewebhook/v2 v2.3.0
 	github.com/stretchr/testify v1.8.0
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
-	k8s.io/api v0.25.0
-	k8s.io/apimachinery v0.25.0
+	k8s.io/api v0.25.1
+	k8s.io/apimachinery v0.25.1
 )
 
 require (
