@@ -15,7 +15,7 @@ on:
   - cron: "0 0 * * 6"
 
 env:
-  REGISTRY_IMAGE: ghcr.io/justsem/gateway-admission-controller
+  REGISTRY_IMAGE: ghcr.io/justsem/gateway-admision-controller
 
 jobs:
   build:
